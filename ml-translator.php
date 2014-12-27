@@ -374,9 +374,14 @@ class MLtranslator
     }
 }
 
-
+/**
+ * Interface MLtag
+ *
+ * Interface used to implement ml-tag classes of tags
+ */
 interface MLtag
 {
+    /* When implemented, this method shall perform translation of specified tag class */
     public function translate(
         $translator_obj,
         $tag_name,
@@ -385,6 +390,7 @@ interface MLtag
         $source_pos
     );
 
+    /* When implemented, this method shall inform the translator, whatever specified tag is pair tag */
     public function is_pair_tag(
         $tag_name
     );

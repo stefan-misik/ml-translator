@@ -1,7 +1,7 @@
 <?php
-include_once("MLtranslator.php");
+include_once("ml-translator.php");
 
-
+/* Test ml-tag type */
 class MLtag_test implements MLtag
 {
     public function translate(
@@ -27,6 +27,7 @@ class MLtag_test implements MLtag
     }
 }
 
+/* Basic class of ml-tags */
 class MLtag_basic implements MLtag
 {
     public function translate(
@@ -141,7 +142,7 @@ class MLtag_list implements MLtag
         }
     }
 }
-
+/* Main ml-code class */
 class MLcode {
 
     private static $translator;
